@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 
 export default function FloatingHeader() {
-  const phoneNumber = "919876543210";
+  const phoneNumber = "+919945466887";
 
   const linkedinUrl = "https://www.linkedin.com/company/d-adore-interiors/";
   const instagramUrl = "https://www.instagram.com/dadore.in/?hl=en";
@@ -66,7 +66,7 @@ export default function FloatingHeader() {
 
           {/* 💬 WhatsApp - Desktop */}
           <a
-            href={`https://wa.me/${phoneNumber}`}
+            href={`https://wa.me/${phoneNumber.replace('+', '')}`}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex rounded-xl border-2 border-white/70 px-7 py-2 text-base font-semibold text-white hover:bg-white/10"
@@ -84,7 +84,7 @@ export default function FloatingHeader() {
             </a>
 
             <a
-              href={`https://wa.me/${phoneNumber}`}
+              href={`https://wa.me/${phoneNumber.replace('+', '')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-green-500 p-2 text-white"
